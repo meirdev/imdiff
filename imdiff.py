@@ -16,8 +16,8 @@ def imdiff(im1, im2) -> list:
 
 
 def main():
-    img1 = cv2.imread("1.png")
-    img2 = cv2.imread("2.png")
+    img1 = cv2.imread("./assets/1.png")
+    img2 = cv2.imread("./assets/2.png")
 
     contours = imdiff(img1, img2)
 
@@ -42,8 +42,8 @@ def main():
     # cv2.waitKey()
     # cv2.destroyAllWindows()
 
-    cv2.imwrite("1_copy.png", cv2.resize(img1, None, fx=0.5, fy=0.5))
-    cv2.imwrite("2_copy.png", cv2.resize(img2, None, fx=0.5, fy=0.5))
+    cv2.imwrite("./assets/1_copy.png", cv2.resize(img1, None, fx=0.5, fy=0.5))
+    cv2.imwrite("./assets/2_copy.png", cv2.resize(img2, None, fx=0.5, fy=0.5))
 
 
 if __name__ == "__main__":
